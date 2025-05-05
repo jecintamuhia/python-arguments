@@ -36,7 +36,7 @@ def exam_results(*args,**kwargs):
     name=kwargs.get("name")
     course=kwargs.get("course")
     if not args:
-        return None
+        return f"hello {name} , we don't have your  results for {course}"
     total_score = sum(args)
     average_score = total_score/len(args)
     return f"hello {name}, your average exam score for{course} is {average_score}"
